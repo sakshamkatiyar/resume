@@ -1,0 +1,263 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{Saksham Katiyar}{ \\
+\href{mailto:saksham0katiyar@gmail.com}{saksham0katiyar@gmail.com} | +91 8400 6780 75
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{JSSATE, Noida}
+\descript{B.Tech in Electronics and Communication Engineering}
+\location{2015 - 2019 | AKTU \\ Agg. Percent: 66.28\%}
+\sectionsep
+
+\subsection{VSEC, Kanpur}
+\descript{Intermediate 10+2}
+\location{2013 - 2015 | ISC \\ Agg. Percent: 93.75\%}
+\sectionsep
+
+\descript{High School 10}
+\location{2011 - 2013 | ICSE \\ Agg. Percent: 89.80\%}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/sakshamkatiyar}{\custombold{sakshamkatiyar}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/sakshamkatiyar}{\custombold{sakshamkatiyar}} \\
+%YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
+%Twitter://  \href{https://twitter.com/katiyarsaksham}{\custombold{@katiyarsaksham}} \\
+%Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+Data Structure \& Algorithms \\
+Control Systems \\
+%Signals and System \\
+Digital Signal Processing \\
+Advanced Electronics System \\
+Microprocessor + Practicum \\
+Digital Design using Verilog + Practicum \\
+VLSI Design + Practicum \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Python \textbullet{} C \textbullet{} Embedded C \textbullet{} Java \\
+Verilog \textbullet{} VHDL \textbullet{} \LaTeX\ \textbullet{} Assembly
+\sectionsep
+
+\subsection{Tools}
+ROS \textbullet{} OpenCV \textbullet{} AWS \textbullet{} MATLAB \\
+XiLinx \textbullet{} VirtualBox \textbullet{} fritzing \textbullet{} Git \\
+\sectionsep
+
+
+\subsection{Hardware}
+Arduino \textbullet{} Raspberry Pi \textbullet{} ESP 8266 \\
+MSP430 \textbullet{} CC3200 \textbullet{} 8085 \textbullet{} 8051
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     OTHER DETAILS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Other Details}
+\subsection{Responsibilities}
+Technical Head Quanta, ECE Dept. \\
+Lab Coordinator, Embedded Systems \& Robotics Lab
+\sectionsep
+
+\subsection{Languages}
+English - Proficient \\
+Hindi - Native \\
+Spanish - Beginner
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\href{http://tri3d.in/}{\runsubsection{Least Count}
+\descript{| Computer Vision Intern}
+\location{June 2018 – July 2018 | IIT-M Research Park, Chennai}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Work related to face recognition and manipulation.
+\item Creating database on AWS, then implementing machine learning models to detect various features of face and quantifying them.
+\item All code was reviewed, perfected, and pushed to production.
+\end{tightemize}
+\sectionsep}
+
+\href{http://shellios.com/}{\runsubsection{Shellios Technolabs}
+\descript{| Product Development Intern }
+\location{Feb 2018 – March 2018 | JSS Step, Noida}
+\begin{tightemize}
+\item Deploying Cloud Services and managing distributed database on AWS.
+\item Created a backbone-like framework for the cloud data storage directly from ESP32.
+\end{tightemize}
+\sectionsep}
+
+\runsubsection{MNNIT}
+\descript{| VLSI Design and Embedded Systems Trainee}
+\location{June 2017 – July 2017 | MNNIT, Allahabad}
+\begin{tightemize}
+\item Synthesis and simulation of circuit designs on Xilinx ISE using Verilog. Worked on Mentor Graphics to design the layout of IC and implementation on FPGA Kit.
+\item Learned the basic concepts of embedded systems and to program in assembly language on 8051 microcontroller and then using Embedded C programming.
+\item Beside the mini projects, the major projects were realization of Wallace Tree Multiplier and Light to frequency converter on trainer kit.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{e-Toll System}
+\descript{| Raspberry Pi, OpenCV, Python}
+\location{May 2018 – June 2018 | Smart India Hackathon, Finalist}
+An advanced toll collection system based on IoT, where one RPi was used as a server maintaining database while other as a client. Number Plate was detected and matched to the database and toll was collected or exception was suitably handled.
+\sectionsep
+
+\href{https://github.com/sakshamkatiyar/chaser_drone}{\runsubsection{Drone Localization and Navigation}
+\descript{| ROS, Python}
+\location{October 2017 – March 2018 | e-Yantra IIT-B, Finalist}
+A drone based project that involves automatic stabilization and localization of a quadcopter. It was developed using Python and ROS. Gazebo simulator was used prior to implementation
+\sectionsep}
+
+\href{https://github.com/sakshamkatiyar/cross_a_crater}{\runsubsection{Crater and Obstacle avoiding Bot}
+\descript{| OpenCV, Python}
+\location{October 2016 – March 2017 | e-Yantra IIT-B, Semi-Finalist}
+This project shows how advance concepts of image processing can be used to process the image through a mounted camera and solve the problems related to traversing on unknown terrain with craters and other rocks while reaching the desired place.
+\sectionsep}
+
+\begin{tabular}{ll}
+    \textbullet{} Optical Character Recognition & ML \\
+    \textbullet{} Hand Gesture controlled Bot & Arduino \\
+    \textbullet{} Maze Solving & Computer Vision
+\end{tabular}
+
+%\textbullet{} Optical Character Recognition | ML
+%\textbullet{} Hand Gesture controlled Bot | Arduino
+%\textbullet{} Maze Solving | Computer Vision
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements} 
+\begin{tabular}{rrll}
+2018 & National & Finalist & Kronothon 2.0 \\
+2017 & National & 4\textsuperscript{th}/202  & Team Leader e-Yantra, IIT-B under MHRD \\
+2017 & College & Hosted & Embedded Systems Workshop \\
+2016 & National & Semi-Finalist & Team Leader e-Yantra, IIT-B under MHRD \\
+%2014 & National & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell \\
+2016 & International & Volunteer & International Cultural Team, WCF \\
+%2014 & North Region & Semi-Finalist & Robo-Wars, COMFEST \\
+%2014 & North Region & 3\textsuperscript{rd}/52 & COMFEST \\
+%2013 & National & Finalist & UCMAS \\
+%2012 & State & Runner Up & UCMAS \\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
